@@ -1,0 +1,11 @@
+---
+aws_region: <your-region>
+template: <ami-template>
+security_group_name: <security-group-name>
+instance_type: <type>
+vpc_subnet: <vpc-subnet>
+vpc_id: <vpc-id>
+ssh_key: <key-name>
+instance_name: "<instance-name>"
+num_nodes: <number-of-server>
+remote_user: <user-to-remote-at-first>

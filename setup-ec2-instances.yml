@@ -1,0 +1,14 @@
+---
+- name: Node App on AWS with Ansible Setup
+  hosts: localhost
+  connection: local
+  tags: provisioning
+  vars_files:
+    - vars/ec2_instance.yml
+  roles:
+    - common
+    - install
+  tasks:
+  - name: Add new instance to host group
+    add_host: name="{{ item.public_ip }}" groupname=launched
+    with_items: ec2.instances
