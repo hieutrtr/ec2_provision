@@ -1,5 +1,5 @@
 ---
-- name: Node App on AWS with Ansible Setup
+- name: ec2 instance on AWS with Ansible Setup
   hosts: localhost
   connection: local
   tags: provisioning
