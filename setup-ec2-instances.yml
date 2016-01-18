@@ -4,7 +4,7 @@
   connection: local
   tags: provisioning
   vars_files:
-    - vars/ec2_instance.yml
+    - vars/ec2_instances.yml
   roles:
     - common
     - install
